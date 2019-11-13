@@ -1,13 +1,5 @@
 #include <GL/glut.h>
 
-void init(){
-    glClearColor(0.0, 0.0, 0.0, 0.0);
-    glEnable(GL_DEPTH_TEST);
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
-    glOrtho(-7,7,7,-7,-7,7);
-    glPushMatrix();
-}
 
 //closed
 void pacman1(){
@@ -1565,6 +1557,7 @@ void eyes4(){
     glFlush();
 }
 
+/*
 int main(int argc, char *argv[]){
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
@@ -1575,4 +1568,4 @@ int main(int argc, char *argv[]){
     init();
     glutMainLoop();
 }
-
+*/

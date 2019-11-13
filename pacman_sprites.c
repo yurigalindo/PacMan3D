@@ -3,7 +3,7 @@
 
 //closed
 void pacman1(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,1.0,0.0);
 
     glPushMatrix();
@@ -31,7 +31,7 @@ void pacman1(){
 
 //half
 void pacman2(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,1.0,0.0);
 
     glPushMatrix();
@@ -105,7 +105,7 @@ void pacman2(){
 
 //open
 void pacman3(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,1.0,0.0);
 
     glPushMatrix();
@@ -191,7 +191,7 @@ void pacman3(){
 
 //red 4 skirt
 void blinky1(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glColor3f(1.0,0.0,0.0);
 
     glPushMatrix();
@@ -277,7 +277,7 @@ void blinky1(){
 
 //red 3 skirt
 void blinky2(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,0.0,0.0);
 
     glPushMatrix();
@@ -351,7 +351,7 @@ void blinky2(){
 
 //pink 4 skirt
 void pinky1(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,0.753,0.796);
 
     glPushMatrix();
@@ -437,7 +437,7 @@ void pinky1(){
 
 //pink 3 skirt
 void pinky2(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,0.753,0.796);
 
     glPushMatrix();
@@ -511,7 +511,7 @@ void pinky2(){
 
 //cyan 4 skirt
 void inky1(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+   
     glColor3f(0.0,1.0,1.0);
 
     glPushMatrix();
@@ -597,7 +597,7 @@ void inky1(){
 
 //cyan 3 skirt
 void inky2(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(0.0,1.0,1.0);
 
     glPushMatrix();
@@ -671,7 +671,7 @@ void inky2(){
 
 //orange 4 skirt
 void clyde1(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,0.647,0.0);
 
     glPushMatrix();
@@ -757,7 +757,7 @@ void clyde1(){
 
 //orange 3 skirt
 void clyde2(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,0.647,0.0);
 
     glPushMatrix();
@@ -831,7 +831,7 @@ void clyde2(){
 
 //blue 4 skirt
 void ghost1(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(0.0,0.0,1.0);
 
     glPushMatrix();
@@ -973,7 +973,7 @@ void ghost1(){
 
 //blue 3 skirt
 void ghost2(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(0.0,0.0,1.0);
 
     glPushMatrix();
@@ -1103,7 +1103,7 @@ void ghost2(){
 
 //white 4 skirt
 void ghost3(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+   
     glColor3f(1.0,1.0,1.0);
 
     glPushMatrix();
@@ -1245,7 +1245,7 @@ void ghost3(){
 
 //white 3 skirt
 void ghost4(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,1.0,1.0);
 
     glPushMatrix();
@@ -1375,7 +1375,7 @@ void ghost4(){
 
 //down
 void eyes1(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,1.0,1.0);
 
     glPushMatrix();
@@ -1421,7 +1421,7 @@ void eyes1(){
 
 //up
 void eyes2(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,1.0,1.0);
 
     glPushMatrix();
@@ -1467,7 +1467,7 @@ void eyes2(){
 
 //left
 void eyes3(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     glColor3f(1.0,1.0,1.0);
 
     glPushMatrix();
@@ -1513,7 +1513,7 @@ void eyes3(){
 
 //right
 void eyes4(){
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+   
     glColor3f(1.0,1.0,1.0);
 
     glPushMatrix();

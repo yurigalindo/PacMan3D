@@ -35,10 +35,23 @@ void SpecialKeys (int key, int x, int y){
 }
 
 void World(){
+  int offX,offY;
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
-	gluLookAt(0,-3,20,
-              0.0,0.0,0.0,
+  if(posX>30)
+    offX=30;
+  else if (posX<-30)
+    offX=-30;
+  else
+    offX=posX;
+  if(posY>15)
+    offY=15;
+  else if (posY<-15)
+    offY=-15;
+  else
+    offY=posY;
+	gluLookAt(offX,offY-3,20,
+              offX,offY,0.0,
               0.0, 1.0, 0.0); //vetor view-up (V)  //vetor view-up
 	glPushMatrix();
 	glTranslatef(posX,posY,0);

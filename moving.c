@@ -15,7 +15,8 @@ void init(){
 }
 
 
-int posX,posY;
+int posX=0,posY=0;
+int phX=6,phY=6;
 void SpecialKeys (int key, int x, int y){
    switch(key){
       case GLUT_KEY_LEFT:
@@ -34,8 +35,28 @@ void SpecialKeys (int key, int x, int y){
    glutPostRedisplay();
 }
 
+void Keyboard (unsigned char key, int x, int y){
+    switch(key){
+       case 'w':
+          phY+=10;
+          break;
+        case 'a':
+          phX-=10;
+          break;
+        case 's':
+          phY-=10;
+          break;
+        case 'd':
+          phX+=10;
+          break;
+    }
+    glutPostRedisplay();
+}
+
+
 void World(){
   int offX,offY;
+  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
   if(posX>30)
@@ -58,6 +79,10 @@ void World(){
 	pacman2();
 	glPopMatrix();
 
+  glTranslatef(phX,phY,0);
+  blinky1();
+  glPopMatrix();
+
 }
 
 int main(int argc, char *argv[]){
@@ -65,11 +90,10 @@ int main(int argc, char *argv[]){
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowPosition(50, 50);
     glutInitWindowSize(500, 500);
-    glutCreateWindow("Pac-Man");
-
+    glutCreateWindow("Pac-Man (3D!)");
     glutDisplayFunc(World);
     glutSpecialFunc(SpecialKeys);
+    glutKeyboardFunc(Keyboard);
     init();
-    
     glutMainLoop();
 }
